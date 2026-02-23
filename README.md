@@ -1,73 +1,114 @@
+# 🏥 Hospital Management System  
+### Object-Oriented Programming (C++)
 
-Hospital Management System
-==========================
+## 📌 Overview
 
-Usage:
+The Hospital Management System is a console-based application developed using C++ that manages core hospital operations including:
 
-User Login and Registration
-Login:
+- Patient records
+- Doctor management
+- Appointment scheduling
+- Medical information tracking
+- Human Resources administration
 
-Enter your username and password to access the system.
-If you are a new user, you will need to register first.
-Register:
+The system is built using Object-Oriented Programming principles and demonstrates structured class design, file handling, and system modularity.
 
-Provide your personal details such as name, mobile number, national ID, email, address, username, password, birthdate, and gender to create a new account.
+---
 
-===================== 
+## 🚀 Features
 
-For Patients
-Booking an Appointment:
+### 👤 User Management
+- Registration and login system
+- Role-based access (Patient, Doctor, HR)
+- Password update functionality
+- Mobile number update functionality
 
-Select the option to book an appointment.
-Choose the specialization required from the available list.
-Select a doctor from the chosen specialization.
-Confirm the appointment by selecting a suitable time slot.
-Viewing Appointments:
+---
 
-Choose the option to view your appointments.
-The system will display a list of your upcoming appointments.
-Cancelling an Appointment:
+### 🩺 Patient Management
+- Book appointments
+- Cancel appointments
+- View scheduled appointments
+- Access personal medical information
 
-Select the option to cancel an appointment.
-Choose the appointment you wish to cancel from the list of your booked appointments.
-Entering Medical Information:
+---
 
-Lab technicians will assist you in entering your medical information.
-Your data will be validated, and your BMI will be calculated.
-A report will be generated with your medical details and the validation results.
+### 👨‍⚕️ Doctor Management
+- View assigned patients
+- Access patient medical records
+- Editable job titles (by HR)
+- Doctor schedule management
 
-=====================
+---
 
-For Doctors
-Viewing Schedule:
+### 🏢 Human Resources Module
+- Add new doctors
+- Remove doctors
+- View all doctors by specialization
+- View all registered patients
 
-Access your schedule to see your working hours, appointments, and available slots.
-Accessing Patient Medical Information:
+---
 
-View the medical records of your patients.
-This information includes sugar level, oxygen level, pressure, weight, height, chronic illnesses, previous surgeries, blood type, medication list.
+### 🧪 Lab Technician Module
+- Create patient medical records
+- Validate medical input values
+- Calculate BMI automatically
+- Generate medical condition report
 
-=====================
+---
 
-For HR Employees
-Editing Job Title:
+## 🧠 OOP Concepts Implemented
 
-HR can update your job title in case of promotions.
+- **Inheritance**  
+  - Patients and Doctors inherit from the User class
 
-Managing Doctors:
+- **Aggregation**  
+  - Patient has Medical Information  
+  - Patient has Appointments  
+  - Doctor has Schedule  
 
-Add new doctors to the system by entering their details.
-Remove doctors from the system in case of dismissals.
-View the list of doctors by their specializations.
-Managing Patients:
+- **Abstraction**  
+  - Separate header (.h) and implementation (.cpp) files  
 
-View the list of all current patients in the hospital.
-Access patient details.
+- **Encapsulation**  
+  - Getter and setter methods for class attributes  
 
-===================== 
+---
 
-System Operations
-Change Password:
-Users can update their passwords through the ChangePassword method.
-Update Mobile Number:
-Users can change their mobile numbers using the ChangeMobile method.
+## 🛠 Technologies Used
+
+- C++
+- Object-Oriented Programming
+- File handling
+- Header & implementation file structure
+- Console-based interface
+
+---
+
+## 🏗 System Architecture
+
+Main classes include:
+
+- `User`
+- `Patient`
+- `Doctor`
+- `Medical_info`
+- `Appointments`
+- `Schedule`
+- `Human_Resources`
+- `Labtech`
+
+Each module is designed with clear responsibilities and structured interaction between components.
+
+---
+
+## 👩‍💻 My Contribution
+
+This project was developed collaboratively as part of a University project.
+
+My contributions included:
+
+- Implementing the Human Resources class
+- Integrating HR functionality into the main program
+- Implementing validation logic
+- Supporting system integration and testing
